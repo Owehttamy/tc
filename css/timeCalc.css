@@ -1,5 +1,5 @@
 body {
-    width: 80%;
+    width: 90%;
 }
 
 #res {
@@ -33,7 +33,7 @@ input[type=text] {
 }
 
 #btns button {
-    width: 45%;
+    width: 43%;
     height: 36px;
     font-size: 18px;
     margin: 0px;
