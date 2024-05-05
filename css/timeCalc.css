@@ -5,9 +5,8 @@ body {
 #res {
     padding: 40px;
     background-color: lightgray;
-    border: solid;
     height: 48px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 input[type=text] {
@@ -19,16 +18,21 @@ input[type=text] {
   border: 1px solid #cdcdcd;
   border-color: rgba(0, 0, 0, .15);
   background-color: white;
-  font-size: 16px;
+  font-size: 24px;
 }
 
-#btnEql, #btnClr {
+#btnEql {
     background-color: darkgreen; 
     color: white;
 }
 
+#btnClr {
+    background-color: darkgray; 
+    color: white;
+}
+
 #btns button {
-    width: 25%;
+    width: 50%;
     height: 36px;
     font-size: 18px;
     margin: 0px;
