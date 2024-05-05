@@ -3,6 +3,7 @@ body {
 }
 
 #res {
+    width: 80%;
     padding: 40px;
     background-color: lightgray;
     height: 48px;
@@ -10,7 +11,7 @@ body {
 }
 
 input[type=text] {
-    width: 45%;
+    width: 80%;
     padding: 10px;
     height: 30px;
     border: 1px solid #cdcdcd;
@@ -30,7 +31,7 @@ input[type=text] {
 }
 
 #btns button {
-    width: 50%;
+    width: 40%;
     height: 36px;
     font-size: 18px;
     margin: 0px;
