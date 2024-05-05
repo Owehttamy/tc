@@ -1,10 +1,10 @@
 body {
-    width: 45%;
+    width: 80%;
 }
 
 #res {
     width: 80%;
-    padding: 40px;
+    padding: 10px;
     background-color: lightgray;
     height: 48px;
     font-size: 24px;
