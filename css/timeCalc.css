@@ -7,6 +7,8 @@ body {
     padding: 10px;
     background-color: lightgray;
     height: 48px;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
     font-size: 24px;
 }
 
@@ -31,7 +33,7 @@ input[type=text] {
 }
 
 #btns button {
-    width: 40%;
+    width: 50%;
     height: 36px;
     font-size: 18px;
     margin: 0px;
