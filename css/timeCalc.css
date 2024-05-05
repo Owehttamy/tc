@@ -37,15 +37,3 @@ input[type=text] {
     margin: 0px;
     float: left;
 }
-
-@media (max-width: 1300px) {
-    body {
-        width: 70%;
-    }   
-}
-
-@media (max-width: 600px) {
-    body {
-        width: 100%;
-    }   
-}
