@@ -1,41 +1,40 @@
 body {
-    width: 90%;
+    font-family: 'Roobert';
 }
 
-#res {
+.grid-container {
     width: 80%;
     padding: 10px;
-    background-color: lightgray;
     height: 48px;
-    border: 1px solid #cdcdcd;
-    border-color: rgba(0, 0, 0, .15);
     font-size: 24px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #06D85F;
+    border: 1px solid #06D85F;
+    color: #000000;
 }
 
-input[type=text] {
+.label {
+    font-weight: 600;
+}
+
+.bar {
+    width: 80%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+input[type=time] {
     width: 80%;
     padding: 10px;
     height: 30px;
-    border: 1px solid #cdcdcd;
-    border-color: rgba(0, 0, 0, .15);
-    background-color: white;
+    border: 1px solid #06D85F;
+    background-color: #06D85F;
+    color: #000000;
     font-size: 24px;
-}
-
-#btnEql {
-    background-color: darkgreen; 
-    color: white;
-}
-
-#btnClr {
-    background-color: darkgray; 
-    color: white;
-}
-
-#btns button {
-    width: 43%;
-    height: 36px;
-    font-size: 18px;
-    margin: 0px;
-    float: left;
+    font-family: 'Roobert';
+    font-weight: 600;
+    
 }
