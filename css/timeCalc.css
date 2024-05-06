@@ -5,28 +5,32 @@ body {
 .grid-container {
     width: 80%;
     padding: 10px;
-    height: 48px;
-    font-size: 24px;
-    text-align: center;
+    align-items: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     background-color: #06D85F;
     border: 1px solid #06D85F;
     color: #000000;
 }
 
 .label {
+    text-align: center;
     font-weight: 600;
+    font-size: 20px;
+}
+
+.value {
+    text-align: center;
+    font-size: 24px;
 }
 
 .bar {
     width: 80%;
-    padding: 10px;
     background-color: #ffffff;
     border: 1px solid #ffffff;
 }
 
-input[type=time] {
+.input {
     width: 80%;
     padding: 10px;
     height: 30px;
@@ -36,5 +40,12 @@ input[type=time] {
     font-size: 24px;
     font-family: 'Roobert';
     font-weight: 600;
+    transition: all 0.3s ease-out;
     
 }
+
+.input:hover {
+    background: #17b85a;
+    color: #000000;
+    border: 1px solid #17b85a;
+  }
