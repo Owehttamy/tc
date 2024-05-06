@@ -3,6 +3,7 @@ body {
 }
 
 .grid-container {
+    margin: auto;
     width: 80%;
     padding: 10px;
     align-items: center;
@@ -31,20 +32,22 @@ body {
 }
 
 .input {
+    margin: auto;
     width: 80%;
     padding: 10px;
     height: 30px;
     border: 1px solid #06D85F;
     background-color: #06D85F;
     color: #000000;
+    text-align: center;
     font-size: 24px;
     font-family: 'Roobert';
     font-weight: 600;
     transition: all 0.3s ease-out;
-    
 }
 
 .input:hover {
+    margin: auto;
     background: #17b85a;
     color: #000000;
     border: 1px solid #17b85a;
