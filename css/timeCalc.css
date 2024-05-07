@@ -1,54 +1,55 @@
 body {
-    font-family: 'Roobert';
+    background-color: rgb(22, 24, 28);
 }
 
-.grid-container {
-    margin: auto;
-    width: 80%;
-    padding: 10px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto;
-    background-color: #06D85F;
-    border: 1px solid #06D85F;
-    color: #000000;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roobert";
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    gap: 3px;
+    width: min(1000px, 100% - 3em);
+    margin-inline:auto;
+}
+
+.wrapper > * {
+    background-color: #06d85f;
+}
+
+.bar:has(input) {
+    display: flex;
+    flex-direction:column;
 }
 
 .label {
-    text-align: center;
     font-weight: 600;
-    font-size: 20px;
-}
-
-.value {
-    text-align: center;
-    font-size: 24px;
-}
-
-.bar {
-    width: 80%;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
 }
 
 .input {
-    margin: auto;
-    width: 80%;
     padding: 10px;
-    height: 30px;
-    border: 1px solid #06D85F;
-    background-color: #06D85F;
-    color: #000000;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Roobert';
-    font-weight: 600;
-    transition: all 0.3s ease-out;
+    border: none;
+    outline: none;
+    font: inherit;
+    text-align: inherit;
+    font-weight: bold;
+    color: white;
+    background-color: #434950;
+    filter: brightness(100%);
+}
+
+input::-webkit-calendar-picker-indicator {
+    filter: invert() sepia() saturate() hue-rotate() brightness(100%) contrast();
 }
 
 .input:hover {
-    margin: auto;
-    background: #17b85a;
-    color: #000000;
-    border: 1px solid #17b85a;
-  }
+    background: #818a95;
+}

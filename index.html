@@ -9,25 +9,23 @@
         <link rel="stylesheet" href="css/timeCalc.css" type="text/css">
         <title>Duration Calculator</title>
     </head>
-    <body>
-        <div class="grid-container">
-            <div class="label">Duration in minutes</div>
-            <div class="value" id="min"></div>
+    <div class="wrapper">
+        <div class="bar">
+          <div class="label">Duration in minutes</div>
+          <div class="value" id="min">60</div>
         </div>
-        <div class="bar"></div>
-        <div class="grid-container">
-            <div class="label">Cost</div>
-            <div class="value" id="cost"></div>
+        <div class="bar">
+          <div class="label">Cost</div>
+          <div class="value" id="cost">Base + $0</div>
         </div>
-        <div class="bar"></div>
-        <div class="grid-container">
-            <div class="label">Duration in decimal</div>
-            <div class="value" id="dec"></div>
+        <div class="bar">
+          <div class="label">Duration in decimal</div>
+          <div class="value" id="dec">1</div>
         </div>
-        <div class="bar"></div>
-        <input class="input" type="time" id="start" name="Start Time" placeholder="Launch Time (hh:mm)" min="9:00" max="17:00" value="12:00">
-        <input class="input" type="time" id="end" name="End Time" placeholder="Return Time (hh:mm)" min="9:00" max="22:00" value="13:00">
-        <p>I'll fix the input section not centering on the webpage later. Very confusing bug.</p>
-        <script src="js/timeCalc.js" type="text/javascript"></script>
-    </body>
+
+        <div class="bar">
+          <input class="input" type="time" id="start" name="Start Time" placeholder="Launch Time (hh:mm)" min="9:00" max="17:00" value="12:00">
+          <input class="input" type="time" id="end" name="End Time" placeholder="Return Time (hh:mm)" min="9:00" max="22:00" value="13:00">
+        </div>
+      </div>
 </html>
