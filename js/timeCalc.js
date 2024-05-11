@@ -23,6 +23,12 @@ endTimeInput.addEventListener(
     false,
 );
 
+var boop = document.getElementById("calc_button");
+if (boop.addEventListener)
+    boop.addEventListener("click", run(), false);
+else if (boop.attachEvent)
+    boop.attachEvent('onclick', run());
+
 function run() {
     var start = startTimeInput.value;
     var end = endTimeInput.value;
