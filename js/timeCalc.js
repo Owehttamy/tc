@@ -2,6 +2,7 @@ let duration="", chunks="", myres="";
 
 var startTimeInput = document.getElementById("start");
 var endTimeInput = document.getElementById("end");
+var boop = document.getElementById("calc_button");
 
 document.addEventListener("DOMContentLoaded", function() {
     run();
@@ -23,11 +24,13 @@ endTimeInput.addEventListener(
     false,
 );
 
-var boop = document.getElementById("calc_button");
-if (boop.addEventListener)
-    boop.addEventListener("click", run(), false);
-else if (boop.attachEvent)
-    boop.attachEvent('onclick', run());
+boop.addEventListener(
+    "click",
+    () => {
+        run();
+    },
+    false,
+);
 
 function run() {
     var start = startTimeInput.value;
