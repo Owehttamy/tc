@@ -5,11 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Duration Calculator">
-        <link rel="icon" type="img/png" href="./timeCalcIcon.png"/>
-        <link rel="stylesheet" href="css/timeCalc.css" type="text/css">
+        <link rel="icon" type="img/png" href="./icon.png"/>
+        <link rel="stylesheet" href="css/time_calc.css" type="text/css">
         <title>Duration Calculator</title>
     </head>
-    <div class="wrapper">
+    <body>
+      <div class="wrapper">
         <div class="bar">
           <div class="label">Duration in minutes</div>
           <div class="value" id="min">60</div>
@@ -24,8 +25,10 @@
         </div>
 
         <div class="bar">
-          <input class="input" type="time" id="start" name="Start Time" placeholder="Launch Time (hh:mm)" min="9:00" max="17:00" value="12:00">
-          <input class="input" type="time" id="end" name="End Time" placeholder="Return Time (hh:mm)" min="9:00" max="22:00" value="13:00">
+          <input class="input" type="time" id="start" placeholder="Launch Time (hh:mm)" min="9:00" max="17:00" value="12:00">
+          <input class="input" type="time" id="end" placeholder="Return Time (hh:mm)" min="9:00" max="22:00" value="13:00">
         </div>
       </div>
+      <script src="js/time_calc.js" type="text/javascript"></script>
+    </body>
 </html>

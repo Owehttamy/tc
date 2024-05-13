@@ -1,51 +1,50 @@
 let duration="", chunks="", myres="";
-
-var startTimeInput = document.getElementById("start");
-var endTimeInput = document.getElementById("end");
+var start_time_input = document.getElementById("start");
+var end_time_input = document.getElementById("end");
 
 document.addEventListener("DOMContentLoaded", function() {
     run();
 });
 
-startTimeInput.addEventListener(
+start_time_input.addEventListener(
     "input",
     () => {
       run();
     },
-    false,
+    false
 );
 
-endTimeInput.addEventListener(
+end_time_input.addEventListener(
     "input",
     () => {
         run();
     },
-    false,
+    false
 );
 
 function run() {
-    var start = startTimeInput.value;
-    var end = endTimeInput.value;
-    duration = calcMinutes(start, end);
-    let [chunks, decimal] = calcChunks(duration).split("|");
+    var start = start_time_input.value;
+    var end = end_time_input.value;
+    duration = calc_minutes(start, end);
+    let [chunks, decimal] = calc_chunks(duration).split("|");
     document.getElementById('min').innerHTML = duration;
     document.getElementById('cost').innerHTML = chunks;
     document.getElementById('dec').innerHTML = decimal;
 }
 
 
-function calcMinutes(start, end) {
-    let [startHours, startMinutes] = start.split(":").map(Number);
-    let [endHours, endMinutes] = end.split(":").map(Number);
+function calc_minutes(start, end) {
+    let [start_hours, start_minutes] = start.split(":").map(Number);
+    let [end_hours, end_minutes] = end.split(":").map(Number);
 
-    let startTotalMinutes = startHours * 60 + startMinutes;
-    let endTotalMinutes = endHours * 60 + endMinutes;
+    let start_total_minutes = start_hours * 60 + start_minutes;
+    let end_total_minutes = end_hours * 60 + end_minutes;
 
-    let minutesDifference = endTotalMinutes - startTotalMinutes;
-    return minutesDifference;
+    let minutes_difference = end_total_minutes - start_total_minutes;
+    return minutes_difference;
 }
 
-function calcChunks(duration) {
+function calc_chunks(duration) {
     let current = duration - 60;
     let first_hour = "Base + $";
     let count = 0;
@@ -60,12 +59,8 @@ function calcChunks(duration) {
     }
 
     let total_fifteen = count * 5;
-
     let dec60 = ((count*15 + 60)/60);
-
     let output = first_hour.concat(total_fifteen);
-
     output = output.concat("|", dec60);
-
     return output;
 }
