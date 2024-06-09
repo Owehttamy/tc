@@ -54,8 +54,8 @@ function calc_chunks(duration) {
         count++;
     }
 
-    if (count > 16) {
-        count = 16;
+    if (count > 12) {
+        count = 12;
     }
 
     let total_fifteen = count * 5;
